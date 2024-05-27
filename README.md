@@ -29,6 +29,34 @@ This repository contains the source code for a cross-platform mobile application
    - Utilizes the **BLoC architecture** for state management.
    - Follows **SOLID** principles in the codebase.
    - Organizes project structure into folders like `business_logic`, `common`, `constants`, `config`, `lib`, `data`, `presentation`, and `services` for structured understanding.
+
+**To run the code from your repository on their local machine, follow these steps:**
+1. Download the Zip File
+2. Open your preffered IDE(Android Studio, VS code)
+3. Create a demo flutter app(flutter version-3.22.1)
+4. Add/Replace the lib, assets folder to your existing project
+5. Add dependencies to you project, check yaml file uploaded here
+6. Add permissions for android manifestfile
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+7. Add permissions for ios info.plist file
+   <key>NSPhotoLibraryAddUsageDescription</key>
+   <string>We need access to your photo library to save photos.</string>
+   <key>NSPhotoLibraryUsageDescription</key>
+   <string>We need access to your photo library to select photos.</string>
+   <key>NSLocationWhenInUseUsageDescription</key>
+   <string>We need access to your location to provide location-based services.</string>
+   <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+   <string>We need access to your location to provide location-based services.</string>
+   <key>NSLocationAlwaysUsageDescription</key>
+   <string>We need access to your location to provide location-based services.</string>
+8. Run flutter pub get
+9. Connect a physical device or start an emulator/simulator and run the app.
+
+
+Clone the repository containing the Flutter project onto their local machine using Git. 
    
 This repository serves as a demonstration of building a Flutter application with features such as API integration, offline support, and UI design while adhering to best practices in software development.
 
